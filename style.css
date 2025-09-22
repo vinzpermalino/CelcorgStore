@@ -1,8 +1,19 @@
-#form {
-    background-color: bisque;
-    
+.signup {
+  display: flex;
+  flex-direction: row;
+}
+
+input {
+  background-color: beige;
+  border-radius: 5px;
+}
+
+label {
+  font-family: Arial;
+  color: brown;
+  font-weight: bold;
 }
 
 body {
-    margin: 25px;
+  background-color: beige;
 }
