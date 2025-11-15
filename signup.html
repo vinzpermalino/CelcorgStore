@@ -1,35 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title> Celcorg Store | Sign Up </title>
-    </head>
-    <body>
-        <div class="signup">
-            <form action="default.asp">
-                <h3> Sign Up </h3>
-                <label for="fname"> First Name </label> <br>
-                    <input type="text" name="fname" required> 
-                <br>
-                <label for="lname"> Last Name </label> <br>
-                    <input type="text" name="lname" required>
-                    <br>
-                <label for="email"> Email </label> <br>
-                    <input type="email" name="email" required>
-                    <br>
-                <label for="fpassword"> Password </label> <br>
-                    <input type="password" name="fpassword" required>
-                    <br>
-                <label for="lpassword"> Confirm Password </label> <br>
-                    <input type="password" name="lpassword" required>
-                    <br>
-                <button onclick="SubmitEvent"> Submit </button>
-                <hr>
-                <a href="login.html"> You already have an account? </a>
-            </form>
-        </div>
 
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="shortcut icon" href="images/celcorgStore_icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Celcorg Store | Sign Up </title>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="icons">
+            <img src="images/logo.png" alt="logo" width="200px">
+        </div>
+        <div class="icons">
+            <a href="home.html"> <i class="fa-solid fa-house" style="color: #ffffff;"> </i> Home </a>
+        </div>
+        <div class="icons">
+            <a href="#"> <i class="fa-solid fa-circle-user" style="color: #ffffff;"> </i> Login </a>
+        </div>
+    </div>
+    <div class="login-container">
+        <h2 style="text-align: center;"> Sign Up </h2>
+        <form action="#">
+            <div class="login-items">
+                <label for="fname"> First Name </label> <br>
+                <input type="text" id="firstname" name="fname" required>
+            </div>
+            <div class="login-items">
+                <label for="fname"> Middle Name </label> <br>
+                <input type="text" id="middlename" name="mname" required>
+            </div>
+            <div class="login-items">
+                <label for="fname"> Last Name </label> <br>
+                <input type="text" id="lastname" name="lname" required>
+            </div>
+            <div class="login-items">
+                <label for="email"> Email </label> <br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="login-items">
+                <label for="sex"> Sex </label> <br>
+                <input type="radio" name="sex" id="male"> <label for="sex"> Male </label>
+                <input type="radio" name="sex" id="female"> <label for="sex"> Female </label>
+            </div>
+            <div class="login-items">
+                <label for="enterpassword"> Enter Password </label>
+                <input type="password" name="enterpassword" id="enterpassword" required>
+            </div>
+            <div class="login-items">
+                <label for="confirmpasword"> Confirm Password </label>
+                <input type="password" name="confirmpasword" id="confirmpasword" required>
+            </div>
+            <div class="login-items">
+                <button type="submit"> Sign Up </button>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, eligendi impedit provident ullam magni, architecto sequi corrupti repellat, alias repellendus magnam beatae praesentium quidem iusto consequuntur modi rerum iste consequatur?</p>
+    </div>
+</body>
+
 </html>
